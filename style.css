@@ -1,0 +1,86 @@
+body {
+    background-color: #662549;
+}
+.sectio {
+    background-color: #836096;
+    border-radius: 30%;
+    margin: 5rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.calendar {
+    background-color: #D0BFFF;
+    border-radius: 13px;
+    padding: 3rem;
+    display: flex;
+    position: relative;
+    cursor: text;
+}
+
+.calendar::before {
+    content: "";
+    width: 90px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #D988B9;
+    position: absolute;
+    right: .3rem;
+    top: 0;
+}
+
+.calendar::after {
+    content: "";
+    width: 90px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #451952;
+    position: absolute;
+    left: .3rem;
+    bottom: 0;
+}
+
+.left {
+    background-color: #DA0C81;
+    color: #F7EFE5;
+    border-radius: 7px;
+    padding: 2rem;
+    z-index: 1;
+}
+
+.right {
+    background-color: #940B92;
+    color: #DFCCFB;
+    border-radius: 7px;
+    padding: 2rem;
+    z-index: 1;
+}
+
+#day {
+    color: #BEADFA;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+#date {
+    color: #D0BFFF;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#month {
+    color: #DFCCFB;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+#year {
+    color: #FFF8C9;
+    font-weight: bold;
+    font-size: 2rem;
+}
